@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/judge_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#01bdfa"
+            android:gravity="center"
+            android:text="评委信息"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/back_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_margin="10dp"
+            android:background="#01bdfa"
+            android:text="&lt; 返回"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="评委编号:"
+            android:textColor="#846300"
+            android:textSize="30dp" />
+
+        <EditText
+            android:inputType="numberSigned"
+            style="@style/my_edit_style"
+            android:id="@+id/add_judger_num"
+            android:layout_width="148dp"
+            android:layout_height="58dp"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评委姓名:"
+            android:textColor="#846300"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/add_judger_name"
+            style="@style/my_edit_style"
+            android:layout_width="284dp"
+            android:layout_height="67dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评委介绍:"
+            android:textColor="#846300"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/add_judger_introduce"
+            style="@style/my_edit_style"
+            android:layout_width="282dp"
+            android:layout_height="104dp" />
+
+    </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_marginRight="30dp"
+            android:id="@+id/add_judger_delete"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/remove"/>
+
+        <ImageButton
+            android:id="@+id/add_judger_cancel"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:background="@drawable/cancel" />
+
+        <ImageButton
+            android:layout_marginLeft="30dp"
+            android:id="@+id/add_judger_store"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:background="@drawable/store" />
+    </LinearLayout>
+
+
+</LinearLayout>

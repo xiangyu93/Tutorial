@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/judge_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="帮助"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <ImageButton
+            android:id="@+id/back_help"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_margin="10dp"
+            android:background="@drawable/back" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/introduction" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="亲爱的用户您好！本款app主持人端和评委端手机需处于同一可用wifi下才能运行，答辩开始之前请务必保证所有手机处于同一wifi网络下！请您根据自己的身份正确选择程序入口，若您是主持人，请等到所有评委老师连上线后再发起答辩。若您是评委老师，请您选择评委老师入口等待主持人发起答辩！
+            " 
+            android:textSize="15dp"
+            android:textColor="@android:color/holo_blue_dark"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

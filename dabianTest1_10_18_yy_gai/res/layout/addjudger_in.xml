@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/judge_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#01bdfa"
+            android:gravity="center"
+            android:text="添加评委"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/back_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_margin="10dp"
+            android:background="#01bdfa"
+            android:text="&lt; 返回"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/judger_list"
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:layout_weight="1.19" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/btn_add_judger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/add" />
+
+</LinearLayout>

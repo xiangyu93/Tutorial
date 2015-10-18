@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/group_listbg"
+    android:layout_height="wrap_content"
+    android:background="@drawable/look"
+    android:orientation="vertical" >
+    
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center_vertical|center_horizontal"
+      android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第"
+                android:textColor="#e29307"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/group_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:textColor="#e29307"
+                android:textSize="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="组"
+                android:textColor="#e29307"
+                android:textSize="40dp" />
+        </LinearLayout>
+</LinearLayout>
